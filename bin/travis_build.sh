@@ -9,7 +9,7 @@ echo "#-------------------------------------------------------------------------
 echo "Login to Artifactory"
 echo "#------------------------------------------------------------------------------------------"
 export DOCKER_REPO=akoundin/hello
-docker login -u akoundin -p $DOCKER_REPO_KEY $DOCKER_REPO
+docker login -u akoundin --password-stdin $DOCKER_REPO_KEY $DOCKER_REPO
 echo "#------------------------------------------------------------------------------------------"
 echo "Build Docker Image"
 echo "#------------------------------------------------------------------------------------------"
