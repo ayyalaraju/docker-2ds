@@ -4,7 +4,7 @@ echo "#-------------------------------------------------------------------------
 echo "Setup the build environment on travis"
 echo "#------------------------------------------------------------------------------------------"
 #git clone git@github.com:ayyalaraju/docker-2ds.git
-export REPO=../docker-2ds
+export REPO=`pwd`
 ls -lrt
 echo "#------------------------------------------------------------------------------------------"
 echo "Login to Artifactory"
